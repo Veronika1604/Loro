@@ -1,0 +1,217 @@
+/* Загальні стилі */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf4;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hero секція */
+  .bg-hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .bg-hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  }
+  
+  .bg-hero p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* Кнопки */
+  .btn-warning {
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Меню */
+  #menu h2, #about h2, #gallery h2, #contacts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  #menu h2::after,
+  #about h2::after,
+  #gallery h2::after,
+  #contacts h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffae00;
+    margin: 10px auto 0;
+  }
+  
+  /* Картки */
+  .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .card img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  /* Галерея */
+  #gallery img {
+    transition: transform 0.3s;
+  }
+  
+  #gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Форма */
+  form input, form textarea {
+    border-radius: 10px;
+  }
+  
+  form button {
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  
+  /* Модальне вікно */
+  .modal-content {
+    border-radius: 12px;
+  }
+  
+  .modal-body img {
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .bg-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .bg-hero p {
+      font-size: 1rem;
+    }
+  
+    #menu h2, #about h2, #gallery h2, #contacts h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.card img {
+  height: 200px; /* или 250px, как тебе нравится */
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Анімація для фото при наведенні */
+.about-img-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилізація для часової шкали */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.timeline-icon {
+  background-color: #f39c12;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.timeline-content h5 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  background: #e9ecef;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  background-color: #3498db;
+}
