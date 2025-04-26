@@ -7,7 +7,7 @@ const menuItems = {
     { title: 'Піца Маргарита', image: 'pizza1.jpg', description: 'Класична піца з моцарелою, томатами та базиліком' },
     { title: 'Піца Пепероні', image: 'pizza2.jpg', description: 'Пікантна піца з салямі та сиром' },
     { title: 'Кальцоне', image: 'pizza3.jpg', description: 'Закрита піца з шинкою та сиром' },
-    { title: 'Гnocchi з соусом', image: 'gnocchi.jpg', description: 'Італійські картопляні галушки в томатному соусі' },
+    { title: 'Ньокі з соусом', image: 'gnocchi.jpg', description: 'Італійські картопляні галушки в томатному соусі' },
     { title: 'Феттучині Альфредо', image: 'fettuccine.jpg', description: 'Паста з вершковим соусом та пармезаном' },
     { title: 'Паста з морепродуктами', image: 'seafood_pasta.jpg', description: 'Мікс креветок, кальмарів у білому вині' },
     { title: 'Курка по-міланськи', image: 'milano_chicken.jpg', description: 'Куряче філе в хрусткій паніровці' },
